@@ -22,5 +22,5 @@ export class GithubService {
 	getRepos(username) {
 		const repos = this.http.get(`https://api.github.com/users/${username}/repos`);
 		return repos;
-		}
+	}
 }
