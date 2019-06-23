@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      GITHUB USER SEARCH
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+    	<ion-input 
+				[(ngModel)]="username" 
+				type="text" 
+				placeholder="github username">
+			</ion-input>	
+			<ion-buttons>
+				<ion-button (click)="getRepos()" color="primary" icon-end>
+				<ion-icon name="search"></ion-icon>
+				</ion-button>
+			</ion-buttons>	
+		</ion-item>
+	</ion-list>
+    <ion-card *ngFor="let repo of repoList">
+        <ion-card-header>
+            {{ repo.name }}
+        </ion-card-header>
+        <ion-card-content>
+            {{ repo.description }}
+        </ion-card-content>
+    </ion-card>
+</ion-content>
