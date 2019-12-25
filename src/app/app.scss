@@ -1,6 +1,26 @@
-// App Styles
-// ----------------------------------------------------------------------------
-// Put style rules here that you want to apply to the entire application. These 
-// styles are for the entire app and not just one component. Additionally, this 
-// file can hold Sass mixins, functions, and placeholder classes to be imported 
-// and used throughout the application.
+.menu-header {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--ion-color-secondary);
+}
+
+.active {
+  color: var(--ion-color-primary);
+  ion-icon {
+    color: var(--ion-color-secondary);
+  }
+}
+
+.iconGlobe {
+	color: var(--ion-color-success);
+}
+
+ion-toggle {
+	color: var(--ion-color-secondary);
+}
+
+.mat-card-image {
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: var(--ion-color-tertiary);
+}

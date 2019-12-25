@@ -2,9 +2,17 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-	{ path: '', redirectTo: 'user-search', pathMatch: 'full' },
-	{ path: 'user-search', loadChildren: './pages/user-search/user-search.module#UserSearchPageModule' },
-	{ path: 'user/:id', loadChildren: './pages/user-detail/user-detail.module#UserDetailPageModule' },
+
+	{
+		path: '',
+		redirectTo: '/app/tabs/user-search',
+		pathMatch: 'full'
+	},
+	{
+		path: 'app',
+		loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
+	}
+
 ];
 
 @NgModule({
