@@ -1,41 +1,41 @@
-# Ionic Angular Github
+# :zap: Ionic Angular Github
 
-App to search for and display github data for a user from the [github API](https://developer.github.com/v3/search/#search-repositories) using the [Ionic 5 framework](https://ionicframework.com/docs).
+* App to search for and display github data for a user from the [github API](https://developer.github.com/v3/search/#search-repositories) using the [Ionic 5 framework](https://ionicframework.com/docs).
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Ionic Angular Github](#zap-ionic-angular-github)
+  * [:page_facing_up: Table of contents](#pagefacingup-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signalstrength-technologies)
+  * [:floppy_disk: Setup](#floppydisk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 * The [Github API](https://angular.io/) has a lot more detailed functionality available:
 
-## Screenshots
+## :camera: Screenshots
 
 ![Ionic page](./img/user-search.png)
 
-## Technologies
+## :signal_strength: Technologies
 
-* [Ionic v5.0.0](https://ionicframework.com/)
-
-* [Angular v7.2.2](https://angular.io/)
-
-* [Ionic/angular v4.1.0](https://www.npmjs.com/package/@ionic/angular)
-
+* [Ionic v5](https://ionicframework.com/)
+* [Angular v9](https://angular.io/)
+* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
 * [github API](https://developer.github.com/v3/search/#search-repositories)
 
-## Setup
+## :floppy_disk: Setup
 
 * To start the server on _localhost://8100_ type: 'ionic serve'
 
-## Code Examples
+## :computer: Code Examples
 
 * Extract from `service.ts` that gets data from the API.
 
@@ -51,20 +51,19 @@ export class NewsService {
 }
 ```
 
-## Features
+## :cool: Features
 
 * tba
 
-## Status & To-do list
+## :clipboard: Status & To-do list
 
 * Status: Working. Very basic.
-
 * To-do: Change search result page to be a user profile with number of repos etc and a photo. Add user repo detail page.
 
-## Inspiration
+## :clap: Inspiration
 
 * none
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
