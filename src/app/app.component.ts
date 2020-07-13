@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 			titlefr: 'Pays',
 			titlesp: 'Países',
 			url: '/app/tabs/user-search',
-			icon: 'list-box',
+			icon: 'search',
 			menuIcon: 'menuIconCountry'
 		},
 		{
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
 			titlefr: 'Océans',
 			titlesp: 'Océanos',
 			url: '/app/tabs/user-detail',
-			icon: 'water',
+			icon: 'list-outline',
 			menuIcon: 'menuIconOceans'
 		},
 		{
