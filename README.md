@@ -18,7 +18,7 @@
 
 ## :books: General info
 
-* The [Github API](https://angular.io/) has a lot more detailed functionality available:
+* The [Github API](https://angular.io/) has a lot more detailed functionality available
 
 ## :camera: Screenshots
 
@@ -27,34 +27,53 @@
 ## :signal_strength: Technologies
 
 * [Ionic v5](https://ionicframework.com/)
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 * [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
 * [github API](https://developer.github.com/v3/search/#search-repositories)
 
 ## :floppy_disk: Setup
 
-* To start the server on _localhost://8100_ type: 'ionic serve' ()
+* To start the server on _localhost://8100_ type: 'ionic serve'
 
 ## :computer: Code Examples
 
-* tba
+* Extract from `app.component.html` to create menu list from an array in the component file
 
 ```typescript
-
+<ion-list>
+  <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+		<ion-item
+			[routerLink]="p.url"
+			routerLinkActive="active"
+			routerDirection="root"
+			(click)="onSidenavClose()">
+      <ion-icon slot="start" [name]="p.icon" [class]="p.menuIcon"></ion-icon>
+      <ion-label *ngIf="language==='en'">
+        {{ p.title }}
+      </ion-label>
+      <ion-label *ngIf="language==='fr'">
+        {{ p.titlefr }}
+      </ion-label>
+      <ion-label *ngIf="language==='sp'">
+        {{ p.titlesp }}
+      </ion-label>
+	  </ion-item>
+  </ion-menu-toggle>
+</ion-list>
 ```
 
 ## :cool: Features
 
-* tba
+* The side menu is activated by the burger menu and extends from the left hand side
 
 ## :clipboard: Status & To-do list
 
-* Status: Working. Very basic.
-* To-do: Change search result page to be a user profile with number of repos etc and a photo. Add user repo detail page.
+* Status: Working menu system but page content to be added.
+* To-do: Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page.
 
 ## :clap: Inspiration
 
-* none
+* [github API](https://developer.github.com/v3/search/#search-repositories)
 
 ## :envelope: Contact
 
