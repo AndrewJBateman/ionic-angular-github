@@ -15,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 // Third party imports
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { IonicStorageModule } from '@ionic/storage';
+import { IonicStorageModule } from '@ionic/storage-angular';
 
 // exported translations loader function that fetches JSON files from the assets folder
 export function createTranslateLoader(http: HttpClient) {

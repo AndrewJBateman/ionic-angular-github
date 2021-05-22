@@ -1,16 +1,15 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
+import { map } from "rxjs/operators";
 
 @Injectable({
-	providedIn: 'root'
+  providedIn: "root",
 })
 export class GithubService {
+  constructor(private http: HttpClient) {}
 
-	constructor(private http: HttpClient ) { }
-
-/* 	searchData(username: string): Observable<any> {
+  /* 	searchData(username: string): Observable<any> {
 		return this.http.get(`https://api.github.com/users/${username}/repos`)
 		.pipe(
 			map(results => {
@@ -19,8 +18,10 @@ export class GithubService {
 			})
 		);
 	} */
-	getRepos(username) {
-		const repos = this.http.get(`https://api.github.com/users/${username}/repos`);
-		return repos;
-	}
+  getRepos(username) {
+    const repos = this.http.get(
+      `https://api.github.com/users/${username}/repos`
+    );
+    return repos;
+  }
 }
