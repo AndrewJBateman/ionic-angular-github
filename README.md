@@ -72,9 +72,9 @@
 
 * The side menu is activated by the burger menu and extends from the left hand side
 
-## :clipboard: Status & To-do list
+## :clipboard: Status & To-do List
 
-* Status: Working menu system but page content to be added.
+* Status: Working menu system but page content to be added. Updated may 2021
 * To-do: Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page.
 
 ## :clap: Inspiration
