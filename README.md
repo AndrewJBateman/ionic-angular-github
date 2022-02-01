@@ -1,6 +1,6 @@
 # :zap: Ionic Angular Github
 
-* App to search for and display github data for a user from the [github API](https://developer.github.com/v3/search/#search-repositories) using the [Ionic 5 framework](https://ionicframework.com/docs).
+* App to search for and display github data for a user from the [github API](https://developer.github.com/v3/search/#search-repositories) using the [Ionic framework](https://ionicframework.com/docs).
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-github?style=plastic)
@@ -32,9 +32,9 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
-* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
+* [Ionic v6](https://ionicframework.com/)
+* [Angular v13](https://angular.io/)
+* [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular)
 * [github API](https://developer.github.com/v3/search/#search-repositories)
 
 ## :floppy_disk: Setup
@@ -74,8 +74,8 @@
 
 ## :clipboard: Status & To-do List
 
-* Status: Working menu system but page content to be added. Updated may 2021
-* To-do: Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page.
+* Status: Working menu system but page content to be added.
+* To-do: Fix darkmode. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page.
 
 ## :clap: Inspiration
 
