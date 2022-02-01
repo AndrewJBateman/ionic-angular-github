@@ -74,8 +74,8 @@
 
 ## :clipboard: Status & To-do List
 
-* Status: Working menu system but page content to be added.
-* To-do: Fix darkmode. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page.
+* Status: Working menu system but page content to be added and fr & es texts to be corrected.
+* To-do: i18n, replace sidebar image. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page.
 
 ## :clap: Inspiration
 
