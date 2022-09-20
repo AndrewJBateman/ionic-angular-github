@@ -18,8 +18,9 @@
   * [:floppy_disk: Setup](#floppy_disk-setup)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+  * [:clipboard: Status & To-do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -33,7 +34,7 @@
 ## :signal_strength: Technologies
 
 * [Ionic v6](https://ionicframework.com/)
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular)
 * [github API](https://developer.github.com/v3/search/#search-repositories)
 
@@ -75,7 +76,7 @@
 ## :clipboard: Status & To-do List
 
 * Status: Working menu system but page content to be added and fr & es texts to be corrected.
-* To-do: i18n, replace sidebar image. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page.
+* To-do: Info page, i18n, replace sidebar image. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page/ POST functions
 
 ## :clap: Inspiration
 
