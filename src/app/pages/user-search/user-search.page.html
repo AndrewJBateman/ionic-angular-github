@@ -22,7 +22,7 @@
       </ion-buttons>
     </ion-item>
   </ion-list>
-  <ion-card *ngFor="let repo of repoList$ | async; let index = index;">
+  <ion-card *ngFor="let repo of repos$ | async; let index = index;">
     <ion-card-header> {{ repo.name }} </ion-card-header>
     <ion-card-content> {{ repo.description }} </ion-card-content>
   </ion-card>
