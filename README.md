@@ -34,7 +34,7 @@
 ## :signal_strength: Technologies
 
 * [Ionic v6](https://ionicframework.com/)
-* [Angular v14](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular)
 * [github API](https://developer.github.com/v3/search/#search-repositories)
 
@@ -76,11 +76,11 @@
 ## :clipboard: Status & To-do List
 
 * Status: Working menu system but page content to be added and fr & es texts to be corrected.
-* To-do: Info page, i18n, replace sidebar image. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page/ POST functions
+* To-do: Fix dark mode switch mode, Info page, i18n, replace sidebar image. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page/ POST functions
 
 ## :clap: Inspiration
 
-* [github API](https://developer.github.com/v3/search/#search-repositories)
+* [github API documentation](https://developer.github.com/v3/search/#search-repositories)
 
 ## :file_folder: License
 
