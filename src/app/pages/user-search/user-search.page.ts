@@ -1,5 +1,5 @@
 import { GithubService } from "./../../services/github.service";
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { Observable } from "rxjs";
 import { Repo } from "./models/repo";
 
@@ -9,17 +9,16 @@ import { Repo } from "./models/repo";
   styleUrls: ["./user-search.page.scss"],
   providers: [GithubService],
 })
-export class UserSearchPage implements OnInit {
+export class UserSearchPage {
   results: Observable<any>;
   public repos$: Observable<Repo[]>;
   public username: string;
 
   constructor(private githubService: GithubService) {}
 
-  ngOnInit() {}
-
-  getRepos(): void {
+  // Input username to search for Github repos
+  handleInput(event: CustomEvent): void {
+    this.username = event.detail.value.toLowerCase();
     this.repos$ = this.githubService.getRepos(this.username);
-    console.log(this.repos$.subscribe((x) => console.log(x)));
   }
 }

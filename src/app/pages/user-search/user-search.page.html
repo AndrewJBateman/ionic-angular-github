@@ -7,21 +7,14 @@
   </ion-toolbar>
 </ion-header>
 <ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-input
-        [(ngModel)]="username"
-        type="text"
-        placeholder="github username"
-      >
-      </ion-input>
-      <ion-buttons>
-        <ion-button (click)="getRepos()" color="primary" icon-end>
-          <ion-icon name="search"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-item>
-  </ion-list>
+  <ion-searchbar
+    color="primary"
+    type="search"
+    placeholder="search name"
+    [debounce]="1000"
+    (ionInput)="handleInput($event)"
+  >
+  </ion-searchbar>
   <ion-card *ngFor="let repo of repos$ | async; let index = index;">
     <ion-card-header> {{ repo.name }} </ion-card-header>
     <ion-card-content> {{ repo.description }} </ion-card-content>
