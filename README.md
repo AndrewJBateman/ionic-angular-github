@@ -34,39 +34,28 @@
 ## :signal_strength: Technologies
 
 * [Ionic v7](https://ionicframework.com/)
-* [Angular v15](https://angular.io/)
+* [Angular v16](https://angular.io/)
 * [Ionic/angular v7](https://www.npmjs.com/package/@ionic/angular)
 * [github API](https://developer.github.com/v3/search/#search-repositories)
 
 ## :floppy_disk: Setup
 
-* To start the server on _localhost://8100_ type: 'ionic serve'
+* `npm i` to install dependencies
+* `ionic serve` to start the server on _localhost://8100_
 
 ## :computer: Code Examples
 
-* Extract from `app.component.html` to create menu list from an array in the component file
+* Extract from `user-search.page.html` to search for Github repos using username input text
 
 ```typescript
-<ion-list>
-  <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-		<ion-item
-			[routerLink]="p.url"
-			routerLinkActive="active"
-			routerDirection="root"
-			(click)="onSidenavClose()">
-      <ion-icon slot="start" [name]="p.icon" [class]="p.menuIcon"></ion-icon>
-      <ion-label *ngIf="language==='en'">
-        {{ p.title }}
-      </ion-label>
-      <ion-label *ngIf="language==='fr'">
-        {{ p.titlefr }}
-      </ion-label>
-      <ion-label *ngIf="language==='sp'">
-        {{ p.titlesp }}
-      </ion-label>
-	  </ion-item>
-  </ion-menu-toggle>
-</ion-list>
+  <ion-searchbar
+    color="primary"
+    type="search"
+    placeholder="search name"
+    [debounce]="1000"
+    (ionInput)="handleInput($event)"
+  >
+  </ion-searchbar>
 ```
 
 ## :cool: Features
@@ -76,7 +65,7 @@
 ## :clipboard: Status & To-do List
 
 * Status: Working menu system but page content to be added and fr & es texts to be corrected.
-* To-do: Fix dark mode switch mode, Info page, i18n, replace sidebar image. Change search result page to be a user profile with number of repos etc. and a photo. Add user repo detail page/ POST functions
+* To-do: Fix dark mode switch mode, Info page, i18n, replace sidebar image. Change search result page to be a user profile with number of repos etc. and a photo.
 
 ## :clap: Inspiration
 
