@@ -42,7 +42,7 @@
           <ion-item (click)="themeService.changeThemeMode()">
             <ion-icon name="contrast" slot="start" color="dark"></ion-icon>
             <ion-label>{{ "MENU.Label-darkMode" | translate }}</ion-label>
-            <ion-toggle slot="end" [(ngModel)]="darkMode"> </ion-toggle>
+            <ion-toggle slot="end" aria-label="choose theme"> </ion-toggle>
           </ion-item>
 
           <ion-item>
@@ -50,8 +50,8 @@
             <ion-label>{{ "MENU.Label-language" | translate }}</ion-label>
             <ion-select
               #Language
-              [(ngModel)]="language"
               (ionChange)="languageChange()"
+              label=" choose language"
             >
               <ion-select-option option value="en" selected>{{
                 "MENU.LangOption-English" | translate
